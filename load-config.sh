@@ -17,19 +17,15 @@ sed -i '$d' package/base-files/files/bin/config_generate
 echo "uci set glfan.@globals[0].temperature='30'" >> package/base-files/files/bin/config_generate
 
 # 设定内网默认ip为192.168.8.1
-sed -i 's/192.168.1.1/192.168.8.1/g' package/base-files/files/bin/config_generate
-
-# 设定主题luci-theme-argon
-sed -i '/luci-theme-bootstrap/d' glinet_depends.yml $GITHUB_WORKSPACE/gl-infra-builder/wlan-ap/profiles/glinet_depends.yml
-sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
+#sed -i 's/192.168.1.1/192.168.8.1/g' package/base-files/files/bin/config_generate
 
 # 修改主机名
-echo "uci set system.cfg01e48a.hostname='GL-AXT1800'" >> package/base-files/files/bin/config_generate
-sed -i 's/OpenWrt/AXT1800/' package/base-files/files/bin/config_generate
-sed -i '/DISTRIB_REVISION/d' package/base-files/files/etc/openwrt_release
-echo "DISTRIB_REVISION='GL.iNet AXT1800'" >> package/base-files/files/etc/openwrt_release
-sed -i '/DISTRIB_DESCRIPTION/d' package/base-files/files/etc/openwrt_release
-echo "DISTRIB_DESCRIPTION='OpenWrt R22.7.1 '" >> package/base-files/files/etc/openwrt_release
+# echo "uci set system.cfg01e48a.hostname='GL-AXT1800'" >> package/base-files/files/bin/config_generate
+# sed -i 's/OpenWrt/AXT1800/' package/base-files/files/bin/config_generate
+# sed -i '/DISTRIB_REVISION/d' package/base-files/files/etc/openwrt_release
+# echo "DISTRIB_REVISION='GL.iNet AXT1800'" >> package/base-files/files/etc/openwrt_release
+# sed -i '/DISTRIB_DESCRIPTION/d' package/base-files/files/etc/openwrt_release
+# echo "DISTRIB_DESCRIPTION='OpenWrt R22.7.1 '" >> package/base-files/files/etc/openwrt_release
 
 # 补充配置文件最后一行结束语
 sed -i '$a uci commit' package/base-files/files/bin/config_generate
