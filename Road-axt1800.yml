@@ -4,54 +4,18 @@ description: add luci application
 feeds:
   - name: glinet
     path: ../feeds_dir/glinet
-  - name: kenzo
-    uri: https://github.com/kenzok8/openwrt-packages.git
-  - name: small
-    uri: https://github.com/kenzok8/small.git
 
 packages:
-  - wpad-openssl
-  - luci-app-adguardhome
-  - luci-app-ssr-plus
-  - luci-app-ddns
-  - adguardhome
-  - ddns-scripts_aliyun
-  - luci-app-uhttpd
   - dnsmasq-full
   - luci-app-commands
-  - luci-app-mwan3
-  - wireguard
-  - luci-app-eqos
-  - wireguard-tools
+  - gl-sdk4-adguardhome
   - luci
   - kmod-usb3
-  - luci-theme-argon
   - luci-app-openclash
-  - luci-app-passwall
-  - luci-app-advanced
-  - luci-app-aliddns
-  - luci-app-aria2
-  - luci-app-ddns
-  - luci-app-frpc
-  - luci-app-frps
-  - luci-app-tinyproxy
-  - luci-app-ttyd
-  - ttyd
-  - luci-app-uhttpd
-  - luci-app-watchcat
-  - luci-app-wireguard
-  - luci-app-wol
   - kmod-usb-net-rndis
   - usb-modeswitch
 
 diffconfig: |
-  CONFIG_PACKAGE_wpad-basic=n
-  CONFIG_PACKAGE_wpad=n
   CONFIG_PACKAGE_dnsmasq=n
-  CONFIG_PACKAGE_luci-i18n-adguardhome-zh-cn=y
-  CONFIG_PACKAGE_luci-i18n-ddns-zh-cn=y
   CONFIG_LUCI_LANG_zh_Hans=y
-  CONFIG_BUSYBOX_CUSTOM=y
-  CONFIG_BUSYBOX_CONFIG_FEATURE_FLOAT_SLEEP=y
-  CONFIG_PACKAGE_luci-theme-bootstrap=n
   CONFIG_PACKAGE_luci-i18n-passwall-zh-cn=y
