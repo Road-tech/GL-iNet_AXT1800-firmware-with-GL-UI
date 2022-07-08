@@ -12,8 +12,6 @@ packages:
   - luci
   - kmod-usb3
   - luci-app-openclash
-  - kmod-usb-net-rndis
-  - usb-modeswitch
 
 diffconfig: |
   CONFIG_PACKAGE_dnsmasq=n
