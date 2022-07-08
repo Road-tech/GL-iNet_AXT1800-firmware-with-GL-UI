@@ -13,13 +13,6 @@
 #删除配置文件最后一行结束语
 sed -i '$d' package/base-files/files/bin/config_generate
 
-# 添加WWAN接口以及防火墙
-sed -i '$a uci set network.wwan=interface' package/base-files/files/bin/config_generate
-sed -i '$a uci set network.wwan.ifname=eth2' package/base-files/files/bin/config_generate
-sed -i '$a uci set network.wwan.proto=dhcp' package/base-files/files/bin/config_generate
-sed -i '$a uci set network.wwan.up=1' package/base-files/files/bin/config_generate
-sed -i "19a \ \ \ \ \ \ \ \ list   network          'wwan' " package/network/config/firewall/files/firewall.config
-
 # 设置风扇30度起转
 echo "uci set glfan.@globals[0].temperature='30'" >> package/base-files/files/bin/config_generate
 
