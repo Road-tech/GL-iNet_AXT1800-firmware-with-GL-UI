@@ -4,13 +4,9 @@ description: Add the LUCI application
 feeds:
   - name: NueXini
     path: ../feeds_dir/NueXini
-  - name: glinet
-    path: ../feeds_dir/glinet
 
 packages:
   - dnsmasq-full
-  - luci-app-commands
-  - gl-sdk4-adguardhome
   - luci-app-openclash
   - luci-theme-argon-2102
   - luci-app-ddns
@@ -27,6 +23,7 @@ packages:
   - luci-app-frps
   - luci-app-tinyproxy
   - luci-app-ttyd
+  - ttyd
   - luci-app-uhttpd
   - luci-app-watchcat
   - luci-app-wireguard
