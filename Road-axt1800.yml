@@ -13,6 +13,7 @@ packages:
   - luci-app-ttyd
   - ttyd
   - luci-app-store
+  - luci-compat
 
 diffconfig: |
   CONFIG_PACKAGE_dnsmasq=n
