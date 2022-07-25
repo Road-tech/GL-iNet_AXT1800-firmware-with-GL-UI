@@ -21,7 +21,7 @@ git clone https://github.com/vernesong/OpenClash.git $GITHUB_WORKSPACE/OpenClash
 cp -r $GITHUB_WORKSPACE/OpenClash/luci-app-openclash $GITHUB_WORKSPACE/gl-infra-builder/feeds/glinet/luci-app-openclash
 
 git clone https://github.com/luochongjun/istore.git $GITHUB_WORKSPACE/istore
-cp -r $GITHUB_WORKSPACE/istore/luci/luci-app-store/ $GITHUB_WORKSPACE/gl-infra-builder/feeds/glinet/luci-app-store
+cp -r $GITHUB_WORKSPACE/istore/luci/luci-app-store $GITHUB_WORKSPACE/gl-infra-builder/feeds/glinet/luci-app-store
 
 git clone https://github.com/NueXini/NueXini_Packages.git $GITHUB_WORKSPACE/gl-infra-builder/feeds/NueXini
 
