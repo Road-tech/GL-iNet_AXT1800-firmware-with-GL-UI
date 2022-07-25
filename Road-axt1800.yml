@@ -14,6 +14,7 @@ packages:
   - ttyd
   - luci-app-store
   - luci-compat
+  - iptables-mod-fullconenat
 
 diffconfig: |
   CONFIG_PACKAGE_dnsmasq=n
