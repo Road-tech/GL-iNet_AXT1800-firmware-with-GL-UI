@@ -12,15 +12,11 @@ Gl-inet AXT1800 固件 + 官方ui
 
 - 默认管理页面: 192.168.8.1
 
-- 默认密码: password
-
-- 默认SSID：GL-AXT1800 / GL-AXT1800-5G
-
-- LTE/4G 接口自动设置
-
-- 默认使用argon主题
+- LUCI界面默认使用argon主题
 
 - 集成Openclash，不过并不能在官方固件显示，只能去到luci界面查看
+
+- 添加istore，需要什么应用自己安装
 
 ## 关于自动编译脚本
 
