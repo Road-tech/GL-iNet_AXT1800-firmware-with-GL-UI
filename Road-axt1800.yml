@@ -12,8 +12,6 @@ packages:
   - luci-app-argon-config
   - luci-app-ttyd
   - ttyd
-  - luci-app-istorex
-  - luci-compat
   - iptables-mod-fullconenat
 
 diffconfig: |
